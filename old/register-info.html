@@ -1,0 +1,65 @@
+<!DOCtype html>
+<head>
+<?php session_start(); ?>
+</head>
+<body>
+<style>
+body {
+	background: #FBFBF0;
+}
+
+h2 {
+	margin: 0px 0px 10px 95px;
+	font-family: Arial, Verdana, serif;
+	color: Navy;
+}
+	
+#input {
+	margin: -5px 0px 0px 75px;
+	padding: 2px;
+	color: #FBFBF0;
+	background: navy;
+	position: absolute; 
+	top 50%;
+	left 50%;
+	height: 200;
+	width: 270px;
+	font-family: Arial, serif;
+	font-size: 20px;
+	background: navy; 
+	border: #999 5px outset; 
+}
+#message {
+	position: relative; 
+	margin: 174px 0px 0px 120px;
+
+</style>
+<h2>Register at Pierough</h2>
+<!--
+<div id="input">
+<form name="login" action="do-login.php" method="post">
+<center>Email:</center>
+<center><input name="username" placeholder="Email Address" size="14" /></center>
+<center>Password:</center>
+<center><input name="password" type="password" placeholder="Password" size="14" /></center>
+<center><input type="submit" name="submit"  value="login" /></center>
+
+</form>
+</div>
+-->
+<div id="input">
+<form action="do-login.php" method="post">
+	<table>
+	<tr><td> First name: </td><td><input type="text" name="first_name" placeholder="First Name" /></td></tr>
+	<tr><td> Last name: </td><td><input type="text" name="last_name" placeholder="Last Name" /></td></tr>
+	<tr><td> E-mail: </td><td><input type="email" name="user_email" placeholder="Email Address" /></td></tr>
+	<tr><td> Password: </td><td> <input type="text" name="user_password" placeholder="Password"  /></td></tr>
+	</table>
+<input name="login" type="hidden" value="register" />
+<input type="submit" value="Submit" size="20" />
+</form>
+</div>
+<div id="message">
+   <p>Already have an account? <a href=/login-info.html>Login</a>.</p>
+</div>
+</body>

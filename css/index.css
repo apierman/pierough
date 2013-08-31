@@ -1,0 +1,11 @@
+/* This is the css sheet for the main page */
+
+.header {
+	height: 100px;
+	width:  200px;
+	text-align: center;
+	background-color: blue;
+	border: 1px dotted black;
+	color: white;
+}
+

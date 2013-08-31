@@ -1,0 +1,153 @@
+/* This is the css sheet for the main page */
+* {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-family: Alial, Verdana, sans-serif;
+	color: lightgray;
+}
+body {
+    background: url('../images/bgs/7.jpg'); 
+}
+.nav-line {
+	border: #999 5px outset; 
+	font-size: 12px;
+	list-style-type: none;
+	text-decoration: none;
+	float: left;
+	display: inline-block;
+	color: lightgray;
+	background: navy;
+}
+.header {
+	/*border: 1px dotted white; */
+	/* border: 1px dotted lightgray; */
+	background: navy;
+	 padding: 25px 25px 25px 25px; 
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+	 /* -moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888; */
+}
+
+/*
+.header:hover {
+	background-color: white;
+	color: blue;
+}
+*/
+
+.paragraph, .paragraph em b {
+	font-family: Times New Roman, sans-serif;
+	font-size: 14px;
+	color: navy;
+/*	height: 150px;
+	width: 500px;
+	border: 0px;
+	margin: 5px 0px 0px 0px;
+	padding: 5px 10px 0px 10px;
+	display: inline-block;
+*/	/* clear: both; */
+}
+
+.head-menu {
+	font-family: Verdana;
+	font-size: 12px;
+	display: inline-block;
+	border: 5px;
+	float: right; 
+	text-align: center;
+	width: 80px;
+	list-style-type: none;
+	text-shadow: 2px 2px #444444;
+}
+
+.head-menu a:link, .head-menu a:visited { color: lightgray; }
+.head-menu a:hover   { color: white; }
+
+/* .head-menu:hover {
+	height: 200px;
+	width: 400px;
+	top-margin: -20px;
+	background-color: blue;
+}
+*/
+
+.left-menu {
+	display: block;
+	float: left; 
+	/* position: absolute; */
+	/* border: 0px; */
+	height: 400px;
+	width:  170px;
+	background-color: navy;
+	font-size: 12px;
+	font-family: Verdana, sans-serif;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+/*	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+	box-shadow: 5px 5px 15px #aaaaaa inset;
+*/
+}
+
+.left-menu  a:link, .left-menu a:visited { color: lightgray; }
+.left-menu  a:hover { color: white; }
+	 
+.left-menu-text {
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 5px;
+}
+
+.image {
+	display: inline-block;
+	border: #999 4px groove; 
+	width: 250px; 
+	height: 190px;
+	/* opacity: 0.8; */
+	/*outline: solid black; */
+	/* padding: 4px 0px 0px 4px;*/
+}
+#showClock {
+	text-align: center;
+	font-family: Arial;
+	font-size: 14px;
+	letter-spacing: 1px;
+	list-style-type: none;
+	/*display: inline; */
+}
+
+#popupbox{
+	margin: 0; 
+	margin-left: 40%; 
+	margin-right: 40%;
+	margin-top: 50px; 
+	padding-top: 10px; 
+	width: 20%; 
+	height: 150px; 
+	position: absolute; 
+	background: #FBFBF0; 
+	border: solid #000000 2px; 
+	z-index: 9; 
+	font-family: arial; 
+	visibility: hidden; 
+}
