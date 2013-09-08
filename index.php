@@ -1,27 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php session_start(); ?>
+<?php session_start(); 
+  $start_time = microtime(true); 
+?>
 <title>www.pierough.com</title>
 <link type="text/css" rel="stylesheet" href="css/main.css" />
 <script type="text/javascript" src="scripts/js/rps.js"></script>
-<!-- <script type="text/javascript" src="scripts/clock.js"></script> -->
-<script type ="text/javascript" lang="javascript">
-function displayTime() {
-  var today=new Date();
-  var h=today.getHours();
-  var m=today.getMinutes();
-  var s=today.getSeconds();
-  var merdiem = h >= 12 ? "pm" : "am";
-  if (h === 0) h = 12;  
-  if (h > 12) h -= 12;
-  if (m < 10) m = "0" + m;
-  if (s < 10) s = "0" + s;
-  document.getElementById("showClock").innerHTML=h+":"+m+":"+s+" "+merdiem;
-  t=setTimeout(function(){displayTime()},1000);
-}
-
-</script>
+<script type="text/javascript" src="scripts/js/clock.js"></script>
 </head>
 
 <body>
@@ -31,7 +17,7 @@ function displayTime() {
 	<span class="left-menu">
 	<ul>
 		<li class="left-menu-text"><a href="/login/index.php"> Login to Website </a></li>
-		<li class="left-menu-text"><a href="/menu.php"> Show Menu </a></li>
+		<li class="left-menu-text"><a href="/menu/menu.php"> Show Menu </a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option C</a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option D</a></li>
 		<li class="left-menu-text"> <input style="color:navy" id="rps" type="button" value="    Play RPS    " onclick="playRPS();" /></li>
@@ -46,7 +32,9 @@ function displayTime() {
 		If you have not used these web tools before - it might make things look very different and sometimes not a eye-popping as
 		they could.</p>
 </div>
-	<script type="text/javascript"> displayTime();</script>
+<div class="footer">
+<?php include_once "footer.php" ?>
+</div>
 </body>
 
 </html>

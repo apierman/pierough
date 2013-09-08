@@ -1,0 +1,9 @@
+DirectoryIndex index.php index.html
+
+<FilesMatch  "\.ini$">
+	Order allow,deny
+	Deny from all
+#	allow from pierough.com
+	Allow from localhost
+	Allow from 198.199.66.103
+</FilesMatch>

@@ -8,9 +8,9 @@
 			echo '<li class="nav-left-detail"><img height=10 width=14 src="http://api.hostip.info/flag.php?ip='.$ip_address.'"> ip <a href="http://whatismyipaddress.com">'.$ip_address.'</a></li>';
 		    }
 		?>
-		</li>
 	</ul>
 </div>
+<script type="text/javascript"> runClock("showClock", 1);</script>
 <div>
 	<ul>
 		<?php if ((isset($_SESSION["user_logged_in"]) && $_SESSION["user_logged_in"] == 1)) {

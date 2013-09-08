@@ -55,10 +55,11 @@ header .stuts span {
 	padding: 0px 2px 2px 2px;
 }
 #showClock {
-        border: #999 4px outset; 
+        border: #999 2px outset; 
 	margin: 2px 2px 8px 2px;
 	width : 180px;
 	background: #222222;
+	color: lightgray;
 	font-size: 14px;
 	letter-spacing: 1px;
 	text-align: center;
@@ -66,17 +67,27 @@ header .stuts span {
 }
 
 #showIp {
-        border: #999 4px outset; 
+        border: #999 2px outset; 
 	margin: 2px 2px 8px 2px;
 	width : 180px;
 	background: #222222;
 	color: lightgray;
 	float: left;
 	font-family: "Arial";
-	font-size: 14px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	text-align: center;
 	/* display: inline; */
 }
 #showIp a:visited, showIp a:link { color: lightgray; }
 #showIp a:hover { color: white; }
+
+footer .footer {
+        height 20%;
+        text-align: center;
+	color: lightgray;
+	position: absolute;
+	font-weight: normal;
+	position: relative;
+	top: 300px;
+}
