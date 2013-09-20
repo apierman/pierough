@@ -3,9 +3,13 @@
 <head>
 <?php session_start(); 
   $start_time = microtime(true); 
+  $ini_file=parse_ini_file("site.ini", true);
+  foreach ($ini_file["js"] as $key => $value) {
+	echo '<script type="text/javascript" src="' . $value . '"></script>' . "\n";
+  }
 ?>
-<title>www.pierough.com</title>
-<link type="text/css" rel="stylesheet" href="css/main.css" />
+<title><?php echo $ini_file["site"]["title"]; ?></title>
+<link type="text/css" rel="stylesheet" href=<?php echo '"'.$ini_file["index"]["css"].'"';?> />
 <script type="text/javascript" src="scripts/js/rps.js"></script>
 <script type="text/javascript" src="scripts/js/clock.js"></script>
 </head>
