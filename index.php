@@ -16,7 +16,7 @@
 
 <body>
 <?php include_once "header.php" ?>
-<h1 class="header" align="center"> Welcome to Pierough.com </h1>
+<h1 class="header" align="center"><?php echo $ini_file["site"]["welcome"]; ?> </h1>
 <div>
 	<span class="left-menu">
 	<ul>
