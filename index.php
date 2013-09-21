@@ -4,23 +4,29 @@
 <?php session_start(); 
   $start_time = microtime(true); 
   $ini_file=parse_ini_file("site.ini", true);
+  # load all css file
   foreach ($ini_file["css"] as $key => $value) {
 	echo '<link type="text/css" rel="stylesheet" href="'.$value.'">'. "\n";
   }
+  # load all javascript file
   foreach ($ini_file["js"] as $key => $value) {
-	echo '<script type="text/javascript" src="' . $value . '"></script>' . "\n";
+	echo '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
   }
+  foreach ($ini_file["run"] as $key => $value) {
+	echo $value. "\n";
+  }
+  # load all javascript file
 ?>
 <title><?php echo $ini_file["site"]["title"]; ?></title>
 </head>
 
 <body>
-<?php include_once "header.php" ?>
+<?php include_once "header.php"; ?>
 <h1 class="header" align="center"><?php echo $ini_file["site"]["welcome"]; ?> </h1>
 <div>
 	<span class="left-menu">
 	<ul>
-		<li class="left-menu-text"><a href="/login/index.php"> Login to Website </a></li>
+		<li class="left-menu-text"><a href="<?php echo $login_logout_href;?>"> <?php echo $login_logout_msg;?> </a></li>
 		<li class="left-menu-text"><a href="/menu/menu.php"> Show Menu </a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option C</a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option D</a></li>
