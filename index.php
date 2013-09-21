@@ -12,10 +12,10 @@
   foreach ($ini_file["js"] as $key => $value) {
 	echo '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
   }
+  # load all scripts that should run
   foreach ($ini_file["run"] as $key => $value) {
 	echo $value. "\n";
   }
-  # load all javascript file
 ?>
 <title><?php echo $ini_file["site"]["title"]; ?></title>
 </head>
