@@ -2,14 +2,25 @@
 <html lang="en" >
     <head>
         <meta charset="utf-8" />
-	<?php session_start(); ?>
-        <title>www.pierough.com - Welcome</title>
-        <link href="/css/layout.css" rel="stylesheet" type="text/css" />
-        <link href="/css/menu.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="/scripts/js/rps.js"></script>
-	<script type="text/javascript" src="/scripts/js/clock.js"></script>
-    </head>
-    <body>
+<?php session_start(); 
+  $ini_file=parse_ini_file("site.ini", true);
+  # load all css file
+  foreach ($ini_file["css"] as $key => $value) {
+	echo '<link type="text/css" rel="stylesheet" href="'.$value.'">'. "\n";
+  }
+  # load all javascript file
+  foreach ($ini_file["js"] as $key => $value) {
+	echo '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
+  }
+  # load all scripts that should run
+  foreach ($ini_file["run"] as $key => $value) {
+	echo $value. "\n";
+  }
+?>
+<title><?php echo $ini_file["site"]["title"]; ?></title>
+
+
+<body>
 <header>
 <?php include_once "header.php"; ?>
 </header>
@@ -71,10 +82,10 @@
 		<input id="rps" type="button" value="Play RPS" onclick="playRPS();" />
 	   </div>
 <footer>
-	   <div class="footer">
-                <?php include_once "footer.php"; ?>
-	   </div>
+<div class="footer">
+<?php include_once "footer.php"; ?>
+</div>
 </footer>
-        </div>
-    </body>
+</div>
+</body>
 </html>

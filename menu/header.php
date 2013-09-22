@@ -4,7 +4,7 @@ if ((isset($_SESSION["user_logged_in"]) && $_SESSION["user_logged_in"] == 1)) {
    //echo '<div id="showIp">ip <a href="http://whatismyipaddress.com">'. $_SESSION['user_ip_address']. '</a></div>';
    echo '<a class="nav-right" href="https://pierough.com/login/index.php?logout"><img width=35 height=35 src="images/icons/logout-01-gray.png"></a></li>';
 } else {
-   echo '<a class="nav-right" href="https://pierough.com/login/index.php"><img width=35 height=35 src="images/icons/login-01-green.png"></a></li>';
+   echo '<a class="nav-right" href="https://pierough.com/login/index.php"><img width=35 height=35 src="/images/icons/login-01-green.png"></a></li>';
 }
 ?>
 
