@@ -1,4 +1,5 @@
 <?php ?>
+<div class="header-top">
 <div class="nav-line-left">
 	<ul>	
 		<li id="showClock"></li>
@@ -29,4 +30,5 @@
 	 	  }
 		?>
 	</ul>
+</div>
 </div>

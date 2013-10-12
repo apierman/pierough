@@ -6,18 +6,17 @@
   $ini_file=parse_ini_file("site.ini", true);
   # load all css file
   foreach ($ini_file["css"] as $key => $value) {
-	echo '<link type="text/css" rel="stylesheet" href="'.$value.'">'. "\n";
+	echo "\t" . '<link type="text/css" rel="stylesheet" href="'.$value.'">'. "\n";
   }
   # load all javascript file
   foreach ($ini_file["js"] as $key => $value) {
-	echo '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
+	echo "\t" . '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
   }
-  # load all scripts that should run
   foreach ($ini_file["run"] as $key => $value) {
-	echo $value. "\n";
+	echo  "\t" .$value. "\n";
   }
 ?>
-<title><?php echo $ini_file["site"]["title"]; ?></title>
+    <title><?php echo $ini_file["site"]["title"]; ?></title>
 </head>
 
 <body>
@@ -30,7 +29,8 @@
 		<li class="left-menu-text"><a href="/menu/menu.php"> Show Menu </a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option C</a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option D</a></li>
-		<li class="left-menu-text"> <input style="color:navy" id="rps" type="button" value="    Play RPS    " onclick="playRPS();" /></li>
+		<li class="left-menu-text"> <input style="color:navy" id="rps" type="button" value="    Play RPS    " onclick="playRPS();" /></li> 
+		<li class="left-menu-text"> <input style="color:navy" id="guessnum" type="button" value="  Guess Number  " onclick="playGuess(1000, 10);" /></li>
 	</ul>
 	</span>
         <a href="http://www.pierough.com/images/jpgs/grainary.jpg"><img alt="a great place" class="image" height=200 width=200 src="images/jpgs/grainary.jpg"></a>
