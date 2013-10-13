@@ -80,6 +80,7 @@
 
 	   <div>
 		<input id="rps" type="button" value="Play RPS" onclick="playRPS();" />
+		<input id="numguess" type="button" value="Number Guess" onclick="playGuess(1000, 10);" />
 	   </div>
 <footer>
 <div class="footer">
