@@ -9,7 +9,7 @@
 body {
     background: url('../images/bgs/7.jpg'); 
 }
-.nav-line-left {
+.nav-menu-left {
 	border: #999 5px outset; 
 	font-size: 12px;
 	width: 14%;
@@ -17,32 +17,58 @@ body {
 	text-decoration: none;
 	float: left;
 	text-align: center;
-	display: inline-block;
+	display: inline;
 	color: lightgray;
 	background: MidnightBlue;
 }
 .nav-left-detail { list-style-type: none; }
+
 .header {
 	/*border: 1px dotted white; */
 	/* border: 1px dotted lightgray; */
+	height: 100px;
+	width: 100%;
 	background: MidnightBlue;
 	 padding: 25px 25px 25px 25px; 
-        -webkit-border-top-left-radius: 10px;
-        -webkit-border-top-right-radius: 10px;
-        -webkit-border-bottom-right-radius: 10px;
-        -moz-border-radius-topleft: 10px;
-        -moz-border-radius-topright: 10px;
-        -moz-border-radius-bottomright: 10px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
-	 /* -moz-border-radius: 10px;
-    	-webkit-border-radius: 10px;
-    	-khtml-border-radius: 10px;
-    	border-radius: 10px;
+ /* -moz-border-radius: 10px;
+   	-webkit-border-radius: 10px;
+   	-khtml-border-radius: 10px;
+  	border-radius: 10px;
 	box-shadow: 10px 10px 5px #888888; */
 }
+
+.nav-right-menu {
+	font-family: Verdana;
+	font-size: 12px;
+	display: inline;
+	border: 5px;
+	float: right; 
+	text-align: center;
+	width: 20%;
+	list-style-type: none;
+	/*text-shadow: 2px 2px #444444; */
+}
+
+.nav-right-detail a:link, .nav-right-detail a:visited { color: lightgray; }
+.nav-right-detail a:hover   { color: white; }
+
+/* .nav-right-detail:hover {
+	height: 200px;
+	width: 400px;
+	top-margin: -20px;
+	background-color: blue;
+}
+*/
 
 /*
 .header:hover {
@@ -64,29 +90,6 @@ body {
 	display: inline-block;
 */	/* clear: both; */
 }
-
-.head-menu {
-	font-family: Verdana;
-	font-size: 12px;
-	display: inline-block;
-	border: 5px;
-	float: right; 
-	text-align: center;
-	width: 80px;
-	list-style-type: none;
-	text-shadow: 2px 2px #444444;
-}
-
-.head-menu a:link, .head-menu a:visited { color: lightgray; }
-.head-menu a:hover   { color: white; }
-
-/* .head-menu:hover {
-	height: 200px;
-	width: 400px;
-	top-margin: -20px;
-	background-color: blue;
-}
-*/
 
 .left-menu {
 	display: block;

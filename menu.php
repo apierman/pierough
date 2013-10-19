@@ -6,7 +6,8 @@
         <title>www.pierough.com - Welcome</title>
         <link href="css/layout.css" rel="stylesheet" type="text/css" />
         <link href="css/menu.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="scripts/rps.js"></script>
+	<script type="text/javascript" src="scripts/js/rps.js"></script>
+	<script type="text/javascript" src="scripts/js/clock.js"></script>
         <script type ="text/javascript" lang="javascript">
 	function displayTime() {
 	   var today=new Date();
