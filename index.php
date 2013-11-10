@@ -12,9 +12,6 @@
   foreach ($ini_file["js"] as $key => $value) {
 	echo "\t" . '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
   }
-  foreach ($ini_file["run"] as $key => $value) {
-	echo  "\t" .$value. "\n";
-  }
 ?>
     <title><?php echo $ini_file["site"]["title"]; ?></title>
 </head>
@@ -23,7 +20,7 @@
 <?php include_once "header.php"; ?>
 <h1 class="header" align="center"><?php echo $ini_file["site"]["welcome"]; ?> </h1>
 <div>
-	<span class="left-menu">
+	<div class="left-menu">
 	<ul>
 		<li class="left-menu-text"><a href="<?php echo $login_logout_href;?>"> <?php echo $login_logout_msg;?> </a></li>
 		<li class="left-menu-text"><a href="/menu/menu.php"> Show Menu </a></li>
@@ -32,10 +29,10 @@
 		<li class="left-menu-text"> <input style="color:navy" id="rps" type="button" value="    Play RPS    " onclick="playRPS();" /></li> 
 		<li class="left-menu-text"> <input style="color:navy" id="guessnum" type="button" value="  Guess Number  " onclick="playGuess(1000, 10);" /></li>
 	</ul>
-	</span>
-        <a href="http://www.pierough.com/images/jpgs/grainary.jpg"><img alt="a great place" class="image" height=200 width=200 src="images/jpgs/grainary.jpg"></a>
-	<a href="http://www.pierough.com/images/jpgs/main-house.jpg"><img alt="a farm house" class="image" src="images/jpgs/main-house.jpg"></a>
-	<a href="http://www.pierough.com/images/jpgs/farm-bridge.jpg"><img alt="road less traveled" class="image" src="images/jpgs/farm-bridge.jpg"></a>
+	</div>
+        <a href="/images/jpgs/grainary.jpg"><img alt="a great place" class="image" height=200 width=200 src="images/jpgs/grainary.jpg"></a>
+	<a href="/images/jpgs/main-house.jpg"><img alt="a farm house" class="image" src="images/jpgs/main-house.jpg"></a>
+	<a href="/images/jpgs/farm-bridge.jpg"><img alt="road less traveled" class="image" src="images/jpgs/farm-bridge.jpg"></a>
 	<p class="paragraph"><em><b>This site is under construction!</b></em><br /><br />
 	        This is an photo of a very nice relaxing location.
 		There are also some changes to the web page that seem to make it look much more professional using css and other web tools.
@@ -45,6 +42,11 @@
 <div class="footer">
 <?php include_once "footer.php" ?>
 </div>
+<?php 
+  foreach ($ini_file["run"] as $key => $value) {
+	echo  "\t" .$value. "\n";
+  }
+?>
 </body>
 
 </html>
