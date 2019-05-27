@@ -3,7 +3,7 @@
 	<ul>	
 		<li id="showClock"></li>
 	        <?php  if ((isset($_SESSION["user_logged_in"]) && $_SESSION["user_logged_in"] == 1)) {
-			  $ip_address = $_SESSION['user_ip_address'];
+			  $ip_address = $_SESSION['ip'];
 			//echo '<li class="nav-left-detail">ip: <a href="http://www.whatismyipaddress.com/">' . $_SERVER["REMOTE_ADDR"] . "</a>";
 			echo '<li class="nav-left-detail"><img height=10 width=14 src="http://api.hostip.info/flag.php?ip='.$ip_address.'"> ip <a href="http://whatismyipaddress.com">'.$ip_address.'</a></li>';
 		    }
