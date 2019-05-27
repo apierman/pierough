@@ -16,16 +16,16 @@
 <div>
 	<span class="left-menu">
 	<ul>
-		<li class="left-menu-text"><a href="/login/index.php"> Login to Website </a></li>
-		<li class="left-menu-text"><a href="/menu/menu.php"> Show Menu </a></li>
+		<li class="left-menu-text"><a href="login/index.php"> Login to Website </a></li>
+		<li class="left-menu-text"><a href="menu/menu.php"> Show Menu </a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option C</a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option D</a></li>
 		<li class="left-menu-text"> <input style="color:navy" id="rps" type="button" value="    Play RPS    " onclick="playRPS();" /></li>
 	</ul>
 	</span>
-        <a href="http://www.pierough.com/images/jpgs/grainary.jpg"><img alt="a great place" class="image" height=200 width=200 src="images/jpgs/grainary.jpg"></a>
-	<a href="http://www.pierough.com/images/jpgs/main-house.jpg"><img alt="a farm house" class="image" src="images/jpgs/main-house.jpg"></a>
-	<a href="http://www.pierough.com/images/jpgs/farm-bridge.jpg"><img alt="road less traveled" class="image" src="images/jpgs/farm-bridge.jpg"></a>
+        <a href="images/jpgs/grainary.jpg"><img alt="a great place" class="image" height=200 width=200 src="images/jpgs/grainary.jpg"></a>
+	<a href="images/jpgs/main-house.jpg"><img alt="a farm house" class="image" src="images/jpgs/main-house.jpg"></a>
+	<a href="images/jpgs/farm-bridge.jpg"><img alt="road less traveled" class="image" src="images/jpgs/farm-bridge.jpg"></a>
 	<p class="paragraph"><em><b>This site is under construction!</b></em><br /><br />
 	        This is an photo of a very nice relaxing location.
 		There are also some changes to the web page that seem to make it look much more professional using css and other web tools.
