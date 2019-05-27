@@ -115,16 +115,16 @@ class Nonce{
 	
 	// TODO clean the $_SESSION['nonce']
 	private function mark_as_used($hash,$timestamp){
-		$hash = mysql_real_escape_string($hash);//never trust users	
-		$timestamp = mysql_real_escape_string($timestamp);//never trust users	
+		$hash = $this->connection->real_escape_string($hash);//never trust users	
+		$timestamp = $this->connection->real_escape_string($timestamp);//never trust users	
 		return $this->connection->query("INSERT INTO phplogin_nonce (timestamp, hash )     VALUES( '$timestamp', '$hash' )");
 	}
 	
 	
 	
 	private function check_if_used($hash,$timestamp){
-		$hash = mysql_real_escape_string($hash);//never trust users	
-		$timestamp = mysql_real_escape_string($timestamp);//never trust users	
+		$hash = $this->connection->real_escape_string($hash);//never trust users	
+		$timestamp = $this->connection->real_escape_string($timestamp);//never trust users	
 		
 		$resut = $this->connection->query("SELECT 'timestamp' FROM 'phplogin_nonce' WHERE 'hash' = '$hash' ");
 		if ( $resut !== false && $resut > 0 ) {
