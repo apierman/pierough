@@ -5,16 +5,17 @@
   $start_time = microtime(true); 
   $ini_file=parse_ini_file("site.ini", true);
   # load all css file
-  foreach ($ini_file["css"] as $key => $value) {
-	echo "\t" . '<link type="text/css" rel="stylesheet" href="'.$value.'">'. "\n";
-  }
   # load all javascript file
-  foreach ($ini_file["js"] as $key => $value) {
-	echo "\t" . '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
-  }
 ?>
-    <title><?php echo $ini_file["site"]["title"]; ?></title>
-</head>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="scripts/js/clock.js"></script>
+    <script type="text/javascript" src="scripts/js/rps.js"></script>
+    <script type="text/javascript" src="scripts/js/guessnum.js"></script>
+    <script type="text/javascript" src="scripts/js/start_page.js"></script>
+    <script type="text/javascript"> runClock("showClock", 1);</script
+
+	<title><?php echo $ini_file["site"]["title"]; ?></title>
+
 
 <body>
 <?php include_once "header.php"; ?>
@@ -42,11 +43,6 @@
 <div class="footer">
 <?php include_once "footer.php" ?>
 </div>
-<?php 
-  foreach ($ini_file["run"] as $key => $value) {
-	echo  "\t" .$value. "\n";
-  }
-?>
 </body>
 
 </html>
