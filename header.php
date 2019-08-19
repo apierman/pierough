@@ -1,11 +1,10 @@
 <div class="nav-line-left">
-	<ul>	
-		<li id="showClock"></li>
+	<ul>
 		<?php 
 			$ip_address = $_SERVER['REMOTE_ADDR'];
 			if (isset($_SESSION['user_logged_in']) && 
 				($_SESSION['user_logged_in'] == 1)) {
-		    	$ip_address = $_SESSION['user_ip_address'] || "127.0.0.1"; 
+		    	$ip_address = $_SESSION['user_ip_address'] ?? "127.0.0.1"; 
 		?>
             <li class="nav-left-detail">
                 <img height=10 width=14 src="http://api.hostip.info/flag.php?ip="<?php echo $ip_address; ?>>

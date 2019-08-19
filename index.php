@@ -17,6 +17,7 @@
 
 <body>
 <?php include_once "header.php"; ?>
+	<ul><li id="showClock"></li></ul>
 <h1 class="header" align="center"><?php echo $ini_file["site"]["welcome"]; ?> </h1>
 <div>
 	<div class="left-menu">
