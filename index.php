@@ -4,8 +4,6 @@
 <?php session_start(); 
   $start_time = microtime(true); 
   $ini_file=parse_ini_file("site.ini", true);
-  # load all css file
-  # load all javascript file
 ?>
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="scripts/js/clock.js"></script>
@@ -23,8 +21,8 @@
 <div>
 	<div class="left-menu">
 	<ul>
-		<li class="left-menu-text"><a href="<?php echo $login_logout_href;?>"> <?php echo $login_logout_msg;?> </a></li>
-		<li class="left-menu-text"><a href="/menu/menu.php"> Show Menu </a></li>
+		<li class="left-menu-text"><a href="<?php echo $login_logout_url;?>"> <?php echo $login_logout_msg;?> </a></li>
+		<li class="left-menu-text"><a href="menu/menu.php"> Show Menu </a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option C</a></li>
 		<li class="left-menu-text"><a href="http://www.google.com"> Choose an option D</a></li>
 		<li class="left-menu-text"> <input style="color:navy" id="rps" type="button" value="    Play RPS    " onclick="playRPS();" /></li> 

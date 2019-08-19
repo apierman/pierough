@@ -3,20 +3,14 @@
     <head>
         <meta charset="utf-8" />
 <?php session_start(); 
-  $ini_file=parse_ini_file("site.ini", true);
-  # load all css file
-  foreach ($ini_file["css"] as $key => $value) {
-	echo '<link type="text/css" rel="stylesheet" href="'.$value.'">'. "\n";
-  }
-  # load all javascript file
-  foreach ($ini_file["js"] as $key => $value) {
-	echo '<script type="text/javascript" src="'.$value.'"></script>' . "\n";
-  }
-  # load all scripts that should run
-  foreach ($ini_file["run"] as $key => $value) {
-	echo $value. "\n";
-  }
-?>
+  $ini_file=parse_ini_file("site.ini", true); ?>
+
+<link type="text/css" rel="stylesheet" href="css/layout.css">
+<link type="text/css" rel="stylesheet" href="css/menu.css">
+<script type="text/javascript" src="scripts/js/guessnum.js"></script>
+<script type="text/javascript" src="scripts/js/rps.js"></script>
+<script type="text/javascript" src="scripts/js/clock.js"></script>
+<script type="text/javascript"> runClock("showClock", 1);</script>
 <title><?php echo $ini_file["site"]["title"]; ?></title>
 
 
@@ -27,7 +21,7 @@
        <div class="container">
 
             <ul id="nav">
-                <li><a href="/index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a class="hsubs" href="#">About Us</a>
                     <ul class="subs">
                         <li><a href="#">Pictures</a></li>
@@ -74,7 +68,7 @@
                         <li><a href="#">Submenu 5-5</a></li>
                     </ul>
 		</li>
-                <li><a href="http://www.pierough.com/">Back to index page</a></li>
+                <li><a href="index.php">Back to index page</a></li>
                <div id="lavalamp"></div>
             </ul>
 
